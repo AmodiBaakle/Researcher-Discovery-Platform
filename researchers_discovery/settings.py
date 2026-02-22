@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-gdxcj5(1*4$(%^h#!_nga-bzy=n@$j3+d0=xm4bd524@65&=8q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["rdp.echopalette.in"]
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Application definition
 
